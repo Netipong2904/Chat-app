@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* Import Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #81d4fa, #0288d1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 25px;
+            color: #0288d1;
+            font-size: 32px;
+            font-weight: 500;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background-color: transparent;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-bottom-color: #0288d1;
+            outline: none;
+        }
+
+        .input-group input::placeholder {
+            color: #aaa;
+        }
+
+        .signup-container button {
+            width: 100%;
+            padding: 14px;
+            background-color: #0288d1;
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-container button:hover {
+            background-color: #007bb5;
+        }
+
+        .signup-container p {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .signup-container a {
+            color: #0288d1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .signup-container a:hover {
+            color: #007bb5;
+            text-decoration: underline;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .signup-container {
+                padding: 30px;
+            }
+
+            .signup-container h2 {
+                font-size: 28px;
+            }
+
+            .input-group input {
+                font-size: 14px;
+            }
+
+            .signup-container button {
+                font-size: 16px;
+            }
+
+            .signup-container p {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .signup-container {
+                padding: 20px;
+            }
+
+            .signup-container h2 {
+                font-size: 24px;
+            }
+
+            .input-group input {
+                font-size: 12px;
+            }
+
+            .signup-container button {
+                font-size: 14px;
+            }
+
+            .signup-container p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>สมัครสมาชิก</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้</label>
+                <input type="text" id="username" placeholder="กรุณากรอกชื่อผู้ใช้" required>
+            </div>
+            <div class="input-group">
+                <label for="email">อีเมล</label>
+                <input type="email" id="email" placeholder="กรุณากรอกอีเมล" required>
+            </div>
+            <div class="input-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="กรุณากรอกรหัสผ่าน" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirm-password" placeholder="กรุณายืนยันรหัสผ่าน" required>
+            </div>
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+        <p>มีบัญชีอยู่แล้ว? <a href="#">เข้าสู่ระบบ</a></p>
+    </div>
+</body>
+</html>
