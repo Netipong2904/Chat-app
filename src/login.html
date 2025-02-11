@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap');
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #007bb5;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .input-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #444;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background-color: transparent;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+
+        .input-group input:focus {
+            border-bottom-color: #007bb5;
+            outline: none;
+            background-color: transparent;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #007bb5, #004c8c);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-container button:hover {
+            background: linear-gradient(135deg, #005f99, #003366);
+        }
+
+        .login-container p {
+            margin-top: 15px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .login-container a {
+            color: #007bb5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .login-container {
+                padding: 25px;
+            }
+            .login-container h2 {
+                font-size: 26px;
+            }
+            .input-group input {
+                font-size: 14px;
+            }
+            .login-container button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        <form action="./index.html" method="post">
+            <div class="input-group">
+                <label for="username">ชื่อผู้ใช้หรืออีเมล</label>
+                <input type="text" id="username" placeholder="กรุณากรอกชื่อผู้ใช้หรืออีเมล" required>
+            </div>
+            <div class="input-group">
+                <label for="password">รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="กรุณากรอกรหัสผ่าน" required>
+            </div>
+            <button type="submit"><a href="../index.html" style="color: white;">เข้าสู่ระบบ</a></button>
+        </form>
+        <p>ยังไม่มีบัญชี? <a href="./signup.html">สมัครสมาชิก</a></p>
+    </div>
+</body>
+</html>

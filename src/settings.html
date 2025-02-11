@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <title>Settings</title>
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #popup {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        #popup p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .button-group a {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .login {
+            background-color: #0288d1;
+            color: white;
+        }
+
+        .signup {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .button-group a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay">
+        <div id="popup">
+            <p>กรุณา Login หรือ Signup เพื่อใช้งานต่อ</p>
+            <div class="button-group">
+                <a href="login.html" class="login">Login</a>
+                <a href="signup.html" class="signup">Signup</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('overlay').addEventListener('click', function(event) {
+            if (event.target === this) {
+                alert("กรุณา Login หรือ Signup ก่อนใช้งาน!");
+            }
+        });
+    </script>
+</body>
+</html>
