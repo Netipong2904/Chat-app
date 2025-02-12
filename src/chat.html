@@ -17,7 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #007bb5;
+            background: #0288d1;
         }
         .container {
             display: flex;
@@ -28,24 +28,28 @@
         }
         .header {
             padding: 15px;
-            background: #005f8c;
+            background: #0277bd;
             color: white;
             text-align: center;
             font-size: 22px;
             font-weight: bold;
         }
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
         .chat-list {
             display: flex;
             overflow-x: auto;
             padding: 10px;
-            background: #005f8c;
+            background: #0277bd;
         }
         .chat-list div {
             min-width: 150px;
             padding: 12px;
             margin-right: 10px;
             background: white;
-            color: #007bb5;
+            color: #0288d1;
             text-align: center;
             border-radius: 8px;
             cursor: pointer;
@@ -79,7 +83,7 @@
             margin-left: 10px;
             padding: 14px 20px;
             border: none;
-            background: #007bb5;
+            background: #0288d1;
             color: white;
             cursor: pointer;
             border-radius: 8px;
@@ -87,13 +91,13 @@
             transition: 0.3s;
         }
         .chat-input button:hover {
-            background: #005f8c;
+            background: #0277bd;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">Chat App</div>
+        <div class="header"><a href="../index.html">Chat App</a></div>
         <div class="chat-list" id="chat-list">
             <div onclick="openChat('John Doe')">John Doe</div>
             <div onclick="openChat('Jane Smith')">Jane Smith</div>
