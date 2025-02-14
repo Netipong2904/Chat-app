@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+
         body {
             background-color: #f3f0e7;
         }
+
         .header {
             display: flex;
             align-items: center;
@@ -21,61 +24,121 @@
             padding: 10px 20px;
             background-color: #f3f0e7;
         }
+
         .header .logo {
             display: flex;
             align-items: center;
             gap: 5px;
         }
+
         .header .logo img {
             width: 30px;
             height: 30px;
         }
+
         .header .menu {
             display: flex;
             gap: 15px;
         }
+
         .header .menu a {
             text-decoration: none;
             color: #4a7d66;
             font-weight: bold;
             font-size: 16px;
         }
+
         .header .menu a.active {
             border-bottom: 2px solid #4a7d66;
         }
+
         .header .icons {
             display: flex;
             gap: 10px;
         }
+
         .header .icons img {
             width: 25px;
             height: 25px;
         }
+
         .content {
             padding: 10px;
         }
+
         .card {
             background-color: #c7e6c7;
             border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 20px;
+            /* เพิ่ม padding เพื่อให้เนื้อหาดูดีขึ้น */
+            margin-bottom: 20px;
+            /* เพิ่ม margin เพื่อให้มีระยะห่างระหว่าง card มากขึ้น */
             position: relative;
+            width: 100%;
+            /* ปรับความกว้างของ card */
+            max-width: 600px;
+            /* กำหนดความกว้างสูงสุดของ card */
+            height: 200px;
+            /* ปรับความสูงของ card */
+            margin-left: auto;
+            /* จัด card ให้อยู่กลาง */
+            margin-right: auto;
+            /* จัด card ให้อยู่กลาง */
         }
+
         .card .icon {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            /* ปรับขนาด icon */
+            height: 30px;
+            /* ปรับขนาด icon */
             position: absolute;
-            top: 10px;
-            left: 10px;
+            top: 15px;
+            /* ปรับตำแหน่ง icon */
+            left: 15px;
+            /* ปรับตำแหน่ง icon */
         }
+
         .card .images {
             position: absolute;
-            bottom: 10px;
-            right: 10px;
+            bottom: 15px;
+            /* ปรับตำแหน่ง images */
+            right: 15px;
+            /* ปรับตำแหน่ง images */
             display: flex;
             flex-wrap: wrap;
-            gap: 5px;
+            gap: 10px;
+            /* เพิ่มระยะห่างระหว่าง images */
         }
+
+        .card .images .img {
+            width: 50px;
+            /* ปรับขนาด images */
+            height: 50px;
+            /* ปรับขนาด images */
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #4a7d66;
+        }
+
+        .card .images .count {
+            width: 50px;
+            /* ปรับขนาด count */
+            height: 50px;
+            /* ปรับขนาด count */
+            border-radius: 50%;
+            background-color: #4a7d66;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            /* ปรับขนาด font */
+            font-weight: bold;
+        }
+
         .card .images .img {
             width: 40px;
             height: 40px;
@@ -86,11 +149,13 @@
             justify-content: center;
             border: 2px solid #4a7d66;
         }
+
         .card .images .img img {
             width: 90%;
             height: 90%;
             border-radius: 50%;
         }
+
         .card .images .count {
             width: 40px;
             height: 40px;
@@ -103,21 +168,30 @@
             font-size: 14px;
             font-weight: bold;
         }
+
         .footer {
-            position: fixed;
-            bottom: 0;
             width: 100%;
             background-color: #4a7d66;
             padding: 10px;
             display: flex;
             justify-content: space-around;
         }
-        .footer img {
+        .footer a {
+            text-decoration: none;
+        }
+        .footer button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .footer button img {
             width: 30px;
             height: 30px;
         }
     </style>
 </head>
+
 <body>
 
     <div class="header">
@@ -167,11 +241,12 @@
     </div>
 
     <div class="footer">
-        <img src="pic/home.png" alt="Home">
-        <img src="pic/search.png" alt="Search">
-        <img src="pic/add.png" alt="Add">
-        <img src="pic/chat.png" alt="Chat">
+        <a href="../index.html"><button><img src="../pic/home.png" alt="Home"></button></a>
+        <a href="../src/find-room.html"><button><img src="../pic/search.png" alt="Search"></button></a>
+        <a href="../src/frinde.html"><button><img src="../pic/add.png" alt="Add"></button></a>
+        <a href="../src/message"><button><img src="../pic/chat.png" alt="Chat"></button></a>
     </div>
 
 </body>
+
 </html>

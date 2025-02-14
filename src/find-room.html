@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Friends</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f6ec;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #f9f6ec;
+            width: 100%;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .header .logo img {
+            width: 30px;
+            height: 30px;
+        }
+        .header .menu {
+            font-size: 18px;
+            color: #4a7d66;
+            font-weight: bold;
+        }
+        .header .icons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .icons img {
+            width: 25px;
+            height: 25px;
+        }
+        .search-bar {
+            margin: 15px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 8px;
+        }
+        .search-bar img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .character {
+            width: 200px;
+        }
+        .start-room {
+            background-color: #4a7d66;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 20px;
+            font-size: 16px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        .footer {
+            width: 100%;
+            background-color: #4a7d66;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer a {
+            text-decoration: none;
+        }
+        .footer button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .footer button img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img src="../pic/logo.png" alt="Logo">
+            <span class="menu">find friends</span>
+        </div>
+        <div class="icons">
+            <img src="../pic/bell.png" alt="Notification">
+            <img src="../pic/user-icon.png" alt="Profile">
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <img src="../pic/search.png" alt="Search">
+    </div>
+
+    <div class="content">
+        <img class="character" src="../pic/logo.png" alt="Character">
+        <button class="start-room">start a room</button>
+    </div>
+
+    <div class="footer">
+        <a href="../index.html"><button><img src="../pic/home.png" alt="Home"></button></a>
+        <a href="../src/find-room.html"><button><img src="../pic/search.png" alt="Search"></button></a>
+        <a href="../src/frinde.html"><button><img src="../pic/add.png" alt="Add"></button></a>
+        <a href="../src/message"><button><img src="../pic/chat.png" alt="Chat"></button></a>
+    </div>
+
+</body>
+</html>
